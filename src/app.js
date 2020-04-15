@@ -29,11 +29,6 @@ app.get('', (req, res) =>{  //First argument is the PATH and the second is the F
 })
 
 app.get('/about', (req, res) =>{
-  if(!req.query.address){
-    return res.send({
-      error : 'You have to enter address'
-    })
-  }
   res.render('about', {
     title: 'About me',
     name: 'Konstantinos R'
